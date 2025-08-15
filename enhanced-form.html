@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Enhanced Form Assignment</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Enhanced HTML5 Content & Forms</h1>
+            <p>This page demonstrates key HTML5 features for structuring content and building robust forms.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Well-Structured Content</h2>
+                <article>
+                    <h3>List of Key Features</h3>
+                    <p>This assignment highlights the following important HTML5 concepts:</p>
+                    <ul>
+                        <li>Semantic markup for improved accessibility and SEO.</li>
+                        <li>Native browser validation without JavaScript.</li>
+                        <li>Efficient content organization using tables and lists.</li>
+                        <li>Embedding multimedia content directly in the HTML.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Table of HTML5 Elements</h3>
+                    <p>Below is a table showing some important HTML5 elements and their purpose.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Element</th>
+                                <th>Purpose</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;audio&gt;</td>
+                                <td>Embeds audio content.</td>
+                                <td>&lt;audio src="audio.mp3"&gt;</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;video&gt;</td>
+                                <td>Embeds video content.</td>
+                                <td>&lt;video src="video.mp4"&gt;</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;fieldset&gt;</td>
+                                <td>Groups related form controls.</td>
+                                <td>&lt;fieldset&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <article>
+                    <h3>Embedded Media Example</h3>
+                    <p>A short, instructional video on form accessibility.</p>
+                    <video controls width="500">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>An audio example demonstrating the audio tag.</p>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </article>
+            </section>
+
+            <section>
+                <h2>Complete HTML5 Form</h2>
+                <p>Please fill out the form below. All fields with an asterisk (*) are required.</p>
+                <form action="#" method="post" autocomplete="on">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <p>
+                            <label for="full-name">Full Name *:</label><br>
+                            <input type="text" id="full-name" name="full-name" placeholder="e.g., Jane Doe" required autocomplete="name">
+                        </p>
+                        <p>
+                            <label for="email">Email Address *:</label><br>
+                            <input type="email" id="email" name="email" placeholder="e.g., name@example.com" required autocomplete="email">
+                        </p>
+                        <p>
+                            <label for="password">Password *:</label><br>
+                            <input type="password" id="password" name="password" minlength="8" required>
+                        </p>
+                        <p>
+                            <label for="username">Username (Read-only):</label><br>
+                            <input type="text" id="username" name="username" value="user123" readonly>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Details</legend>
+                        <p>
+                            <label for="dob">Date of Birth:</label><br>
+                            <input type="date" id="dob" name="dob" autocomplete="bday">
+                        </p>
+                        <p>
+                            <label for="phone">Phone Number:</label><br>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </p>
+                        <p>
+                            <label for="age">Age (18-99):</label><br>
+                            <input type="number" id="age" name="age" min="18" max="99">
+                        </p>
+                    </fieldset>
+
+                    <p><button type="submit">Submit Form</button></p>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Enhanced HTML5. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>
